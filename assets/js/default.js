@@ -14,7 +14,6 @@
             setCookie("themeStyle", "light");
         }
     }
-    ;
     changeTheme(getCookie("themeStyle"));
     //navigation active
     var url = window.location.href;
@@ -120,6 +119,12 @@ function loadBlogByURL(url, isSetReplaceState, isChangeScreen) {
                 smallScreenPageChange(2);
             }
             $("#blog-view").html($("#blog-view", html).html());
+
+            var math = document.getElementById("blog-view");
+	console.log(math);
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
+            mermaid.init();
+
             Prism.highlightAll();
             document.title = $(".blog-view-title", html).html();
             headroomInit();

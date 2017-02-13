@@ -9,7 +9,7 @@ html {
 body {
     height: 100%;
     font-size: 100%;
-    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体" ! important;
+    font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;
 }
 
 div, a {
@@ -21,10 +21,12 @@ img {
 }
 
 pre {
+    font-size: 1em;
     overflow-x: hidden;
 }
 
 code {
+    font-size: 1em;
     white-space: pre-wrap !important;
     white-space: -moz-pre-wrap !important;
     white-space: -o-pre-wrap !important;
@@ -82,7 +84,6 @@ code {
 /*-----------  navigation(left)  ------------*/
 /*-------------------------------------------*/
 #left-bar {
-    padding-right: 14px;
     height: 100%;
 }
 
@@ -195,6 +196,7 @@ code {
     width: 100%;
     position: absolute;
     z-index: 99999;
+    top: 90%;
 }
 
 #blog-view-header div {
@@ -210,26 +212,19 @@ code {
 .blog-view-container {
     height: 100%;
     position: relative;
-    margin: 0 auto;
-    max-width: 1280px;
-    min-width: 240px;
     padding: 0 1rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 .blog-view-container header {
-    padding-top: 4rem;
 }
 
 .blog-view-title {
-    margin-bottom: 1rem;
-    text-align: center;
     font-size: 2rem;
 }
 
 .blog-view-date {
-    text-align: center;
     font-size: 0.8rem;
 }
 
@@ -237,9 +232,16 @@ code {
     border-top: .0625rem solid rgba(255, 255, 255, .8);
 }
 
+.blog-view-entry {
+    margin: 1em auto;
+    max-width: 1280px;
+    min-width: 240px;
+    padding: 15px;
+}
+
 .blog-view-content {
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     margin-bottom: 3rem;
 }
+

@@ -9,6 +9,9 @@ pre[class*="language-"] {
     background: none;
 }
 
+body {
+    background-color: #E9EBF7;
+}
 /*--------------------------------------*/
 /*-------------导航栏（左列）--------------*/
 /*--------------------------------------*/
@@ -105,7 +108,6 @@ pre[class*="language-"] {
 /*-------------文章内容（右列）--------------*/
 /*----------------------------------------*/
 #blog-view {
-    background-color: #E9EBF7;
 }
 
 #blog-view-header div {
@@ -118,6 +120,11 @@ pre[class*="language-"] {
     color: #F9F9F9;
     margin: 3px 5px;
     padding: 6px 12px;
+}
+
+.blog-view-entry {
+    background: #FFF;
+    box-shadow: 0 0 10px #2a2c38;
 }
 
 .blog-view-title {
@@ -144,17 +151,6 @@ pre[class*="language-"] {
 
 .blog-view-content code[class^="language-"], .blog-view-content code:not([class]) {
     color: #00466B;
-}
-
-.blog-view-content pre {
-    background: #F3F1F0;
-    border: 0;
-    box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
-    color: #00466B;
-}
-
-.blog-view-content pre code {
-    box-shadow: none;
 }
 
 .blog-view-content blockquote {

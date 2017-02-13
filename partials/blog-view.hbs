@@ -5,19 +5,21 @@
                 <button onclick="javascript:smallScreenPageChange(1)" class="btn">< Back</button>
             </div>
         </header>
-        <article class="blog-view-container {{post_class}}">
-            <header>
-                <div class="blog-view-title">
-	                {{title}}
+        <div class="blog-view-container {{post_class}}">
+            <article class="blog-view-entry">
+                <header>
+                    <div class="blog-view-title">
+                        {{title}}
+                    </div>
+                    <div class="blog-view-date">
+                         由 {{author.name}} 发表于 {{date format="YYYY年MM月DD日"}}
+                    </div>
+                </header>
+                <hr>
+                <div class="blog-view-content">
+                        {{content}}
                 </div>
-                <div class="blog-view-date">
-					{{date format="YYYY-MM-DD"}}
-                </div>
-            </header>
-            <hr>
-            <div class="blog-view-content">
-				{{content}}
-            </div>
-        </article>
+            </article>
+        </div>
     </div>
 {{/post}}
