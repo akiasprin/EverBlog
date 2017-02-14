@@ -97,7 +97,7 @@ function loadBlogListByURL(url, isSetReplaceState) {
             NProgress.done();
         },
         error: function () {
-            alert("Something went wrong!");
+            alert("网络异常，请稍后再试");
         }
     });
 }
@@ -130,7 +130,7 @@ function loadBlogByURL(url, isSetReplaceState, isChangeScreen) {
             NProgress.done();
         },
         error: function () {
-            alert("Something went wrong!");
+            alert("网络异常，请稍后再试");
         }
     });
 }
