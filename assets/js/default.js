@@ -114,20 +114,18 @@ function loadBlogByURL(url, isSetReplaceState, isChangeScreen) {
             if (isSetReplaceState) {
                 history.replaceState(null, null, url);
             }
-            var html = $.parseHTML(dates);
+            html = $.parseHTML(dates, true);
             if (isChangeScreen) {
                 smallScreenPageChange(2);
             }
             $("#blog-view").html($("#blog-view", html).html());
-
-            var math = document.getElementById("blog-view");
-	console.log(math);
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub, math]);
+            var content = $("#blog-view")[0];
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, content]);
             mermaid.init();
-
             Prism.highlightAll();
             document.title = $(".blog-view-title", html).html();
             headroomInit();
+
         },
         complete: function () {
             NProgress.done();
