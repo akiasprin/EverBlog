@@ -114,7 +114,7 @@ function loadBlogByURL(url, isSetReplaceState, isChangeScreen) {
             if (isSetReplaceState) {
                 history.replaceState(null, null, url);
             }
-            html = $.parseHTML(dates, true);
+            var html = $.parseHTML(dates, true);
             if (isChangeScreen) {
                 smallScreenPageChange(2);
             }

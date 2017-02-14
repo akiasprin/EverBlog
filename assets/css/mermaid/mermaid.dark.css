@@ -261,7 +261,7 @@ text.actor {
   font-size: 14px;
 }
 div.mermaidTooltip {
-  position: absolute;
+  position: fixed;
   text-align: center;
   max-width: 200px;
   padding: 2px;
