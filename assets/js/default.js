@@ -125,7 +125,6 @@ function loadBlogByURL(url, isSetReplaceState, isChangeScreen) {
             Prism.highlightAll();
             document.title = $(".blog-view-title", html).html();
             headroomInit();
-
         },
         complete: function () {
             NProgress.done();
