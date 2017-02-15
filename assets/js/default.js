@@ -158,7 +158,7 @@ function smallScreenPageChange(page) {
 var loading = false;
 function loadBlogListNextPage() {
     var scope = $("#pagination #next-page");
-    scope.html('Loading next...');
+    scope.html('加载中..');
     loading = true;
     var url = $('#pagination #next-page').attr('href');
     $('<div></div>').load(url, function (responseText, textStatus, XMLHttpRequest) {
@@ -166,7 +166,7 @@ function loadBlogListNextPage() {
             scope.replaceWith($(this).find("#pagination #next-page"));
             $("#blog-list .list-container").append($(this).find("#blog-list .list-container").children());
         } else {
-            scope.html('Failed to load, click to try again');
+            scope.html('网络异常，请稍后重试');
         }
         loading = false;
     });
